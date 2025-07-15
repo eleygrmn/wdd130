@@ -1,24 +1,45 @@
+:root {
+    --primary-color: darkblue;
+    --secondary-color: #0077b6;
+    --aside-bg: #e0f7fa;
+    --text-color: #222;
+    --nav-link-color: white;
+    --img-border: 1px solid black;
+    --img-shadow: 0 0 30px gray;
+    --main-max-width: 800px;
+    --aside-width: 350px;
+    --aside-border: 2px solid var(--secondary-color);
+    --footer-border: 2px solid var(--secondary-color);
+    --main-img-width: 150px;
+    --aside-img-width: 200px;
+    --nav-padding: 10px;
+    --nav-link-padding: 20px;
+    --aside-padding: 1rem;
+    --footer-padding-top: 1rem;
+}
+
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--nav-padding);
 }
 
 nav a {
-    color: white;
+    color: var(--nav-link-color);
     display: block;
-    padding: 20px;
+    padding: var(--nav-link-padding);
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color);
 }
 
 img {
-    width: 150px;
+    width: var(--main-img-width);
     height: auto;
-    border: 1px solid black;
+    border: var(--img-border);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--img-shadow);
 }
 
 p {
@@ -27,28 +48,28 @@ p {
 
 
 main {
-    max-width: 800px;
+    max-width: var(--main-max-width);
     margin: 0 auto;
 }
 
 aside {
-    width: 350px;
+    width: var(--aside-width);
     margin: 2rem auto;
-    border: 2px solid #0077b6;
-    padding: 1rem;
-    background-color: #e0f7fa;
-    color: #222;
+    border: var(--aside-border);
+    padding: var(--aside-padding);
+    background-color: var(--aside-bg);
+    color: var(--text-color);
 }
 
 aside img {
-    width: 200px;
+    width: var(--aside-img-width);
     height: auto;
     display: block;
     margin-bottom: 1rem;
 }
 
 main img {
-    width: 150px;
+    width: var(--main-img-width);
     height: auto;
     /* ...other styles if needed... */
 }
@@ -59,7 +80,6 @@ p {
 
 footer {
     margin-top: 2rem;
-    border-top: 2px solid #0077b6;
-    text-align: center;
-    padding-top: 1rem;
+    border-top: var(--footer-border) text-align: center;
+    padding-top: var(--footer-padding-top)
 }
