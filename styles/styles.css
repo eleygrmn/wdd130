@@ -80,6 +80,7 @@ p {
 
 footer {
     margin-top: 2rem;
-    border-top: var(--footer-border) text-align: center;
+    border-top: var(--footer-border);
+    text-align: center;
     padding-top: var(--footer-padding-top);
 }
