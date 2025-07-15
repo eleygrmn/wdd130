@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #FFF07C;
+    --secondary-color: #F0F7EE;
+    --accent1-color: #8E928B;
+    --accent2-color: #F59F7A;
+}
+
+
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Merriweather", serif;
+    font-weight: 100;
+}
