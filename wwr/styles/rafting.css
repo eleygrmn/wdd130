@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #FFF689;
+    --secondary-color: #FA900F;
+    --accent1-color: #0F1A20;
+    --accent2-color: #2274A5;
+    --accent3-color: #F5F3F7;
+    --heading-font: "Noto Sans JP", sans-serif;
+    --text-font: "Merriweather", serif;
+    --max-width: 900px;
+}
+
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--heading-font);
+    background-color: var(--accent3-color);
+}
+
+header, main, footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+header img {
+    max-width: 120px;
+    height: auto;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: var(--text-font);
+    color: var(--accent1-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--accent2-color);
+    font-size: 1.5em;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    font-size: 2.5em;
+    color: var(--accent3-color);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+/* Hero Description and Image */
+.hero article {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(43, 147, 208, 0.8);
+    opacity: 0.9;
+    color: var(--accent3-color);
+    padding: 15px;
+    max-width: 100%;
+}
+
+.hero article img {
+    float: right;
+    width: 100px;
+    margin-left: 10px;
+    border: 3px solid var(--accent1-color);
+}
+
+/* Sections */
+section {
+    margin-top: 40px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.socialmedia {
+    margin-top: 10px;
+}
+
+.socialmedia a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+}
