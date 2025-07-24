@@ -6,36 +6,58 @@
     --nav-link-color: white;
     --img-border: 1px solid black;
     --img-shadow: 0 0 30px gray;
-    --main-max-width: 800px;
-    --aside-width: 350px;
-    --aside-border: 2px solid var(--secondary-color);
-    --footer-border: 2px solid var(--secondary-color);
-    --main-img-width: 150px;
-    --aside-img-width: 200px;
-    --nav-padding: 10px;
-    --nav-link-padding: 20px;
-    --aside-padding: 1rem;
-    --footer-padding-top: 1rem;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 
 nav {
     background-color: var(--primary-color);
-    padding: var(--nav-padding);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: var(--nav-link-color);
     display: block;
-    padding: var(--nav-link-padding);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 h1 {
     color: var(--primary-color);
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px; 
+
 }
 
 img {
-    width: var(--main-img-width);
+    width: 150px;
     height: auto;
     border: var(--img-border);
     padding: 2px;
@@ -53,23 +75,23 @@ main {
 }
 
 aside {
-    width: var(--aside-width);
+    width: 350px;
     margin: 2rem auto;
-    border: var(--aside-border);
-    padding: var(--aside-padding);
+    border: 2px solid var(--secondary-color);
+    padding: 1rem;
     background-color: var(--aside-bg);
     color: var(--text-color);
 }
 
 aside img {
-    width: var(--aside-img-width);
+    width: 200px;
     height: auto;
     display: block;
     margin-bottom: 1rem;
 }
 
 main img {
-    width: var(--main-img-width);
+    width: 150px;
     height: auto;
     /* ...other styles if needed... */
 }
@@ -80,7 +102,7 @@ p {
 
 footer {
     margin-top: 2rem;
-    border-top: var(--footer-border);
+    border-top: 2px solid var(--secondary-color);
     text-align: center;
-    padding-top: var(--footer-padding-top);
+    padding-top: 1rem
 }
