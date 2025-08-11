@@ -329,21 +329,35 @@ footer p {
     border-radius: 10px;
 }
 
-/* Call to Action */
+/* trips.css */
+
+/* --------------------
+   Call to Action
+-------------------- */
 .cta {
     text-align: center;
     padding: 2rem;
     background: var(--secondary-color);
     color: var(--accent1-color);
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .cta .btn {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     background: var(--accent2-color);
-    color: white;
+    color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta .btn:hover {
+    background: var(--accent3-color);
 }
 
 /* Trip Section Layout */
@@ -353,30 +367,46 @@ footer p {
     gap: 1.5rem;
     padding: 2rem;
 }
-
+.trips article {
+    background: none; /* Removed background color */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 8px;
+}
 .trips img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-/* Trip Table */
+/* --------------------
+   Trip Table
+-------------------- */
 .trip-table {
     padding: 2rem;
+    overflow-x: auto;
 }
 
 .trip-table table {
     width: 100%;
     border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.trip-table th,
+.trip-table th, 
 .trip-table td {
-    border: 1px solid #ccc;
-    padding: 0.75rem;
+    border: 1px solid #ddd;
+    padding: 0.85rem;
     text-align: center;
 }
 
 .trip-table th {
     background: var(--primary-color);
+    color: var(--accent1-color);
+    font-weight: bold;
+}
+
+.trip-table tr:nth-child(even) {
+    background: #f9f9f9;
 }

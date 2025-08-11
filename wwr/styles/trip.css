@@ -1,0 +1,51 @@
+/* Call to Action */
+.cta {
+    text-align: center;
+    padding: 2rem;
+    background: var(--secondary-color);
+    color: var(--accent1-color);
+}
+.cta .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--accent2-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Trip Section Layout */
+.trips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+.trips article {
+    background: none; /* Removed background color */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 8px;
+}
+.trips img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Trip Table */
+.trip-table {
+    padding: 2rem;
+}
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.trip-table th, .trip-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+}
+.trip-table th {
+    background: var(--primary-color);
+}
